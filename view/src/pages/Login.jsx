@@ -101,8 +101,12 @@ const Login = () => {
         </form>
         
         <div className="text-center mt-6">
+          <p className="text-blue-100 text-sm mb-4">Demo - Use qualquer email e senha para entrar</p>
           <p className="text-white/60 text-sm">
-            Demo - Use qualquer email e senha para entrar
+            Não tem uma conta?{' '}
+            <Link to="/register" className="text-blue-300 hover:text-blue-200 font-medium">
+              Criar conta
+            </Link>
           </p>
         </div>
       </div>

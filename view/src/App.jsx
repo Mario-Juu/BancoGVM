@@ -4,10 +4,12 @@ import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/Layout/ProtectedRoute';
 import Navigation from './components/Layout/Navigation';
 import Login from './pages/Login';
+import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Transfer from './pages/Transfer';
 import Extract from './pages/Extract';
 import Cards from './pages/Cards';
+import Deposit from './pages/Deposit';
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route
             path="/*"
             element={
@@ -25,6 +28,7 @@ const App = () => {
                     <Routes>
                       <Route path="/dashboard" element={<Dashboard />} />
                       <Route path="/transfer" element={<Transfer />} />
+                      <Route path="/deposit" element={<Deposit />} />
                       <Route path="/extract" element={<Extract />} />
                       <Route path="/cards" element={<Cards />} />
                       <Route path="/" element={<Navigate to="/dashboard" replace />} />

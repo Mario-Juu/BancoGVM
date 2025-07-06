@@ -13,7 +13,7 @@ const Dashboard = () => {
 
   const quickActions = [
     { to: '/transfer', icon: Send, label: 'Transferir', color: 'text-blue-600' },
-    { to: '#', icon: Plus, label: 'Depositar', color: 'text-green-600' },
+    { to: '/deposit', icon: Plus, label: 'Depositar', color: 'text-green-600' },
     { to: '/extract', icon: Download, label: 'Extrato', color: 'text-purple-600' },
     { to: '/cards', icon: CreditCard, label: 'Cartões', color: 'text-orange-600' }
   ];

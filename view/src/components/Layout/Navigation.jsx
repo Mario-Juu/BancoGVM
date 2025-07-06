@@ -13,6 +13,7 @@ const Navigation = () => {
   const navItems = [
     { path: '/dashboard', label: 'Dashboard' },
     { path: '/transfer', label: 'Transferir' },
+    { path: '/deposit', label: 'Depositar' },
     { path: '/extract', label: 'Extrato' },
     { path: '/cards', label: 'Cartões' }
   ];
